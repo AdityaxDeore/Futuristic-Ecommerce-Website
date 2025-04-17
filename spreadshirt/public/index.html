@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom T-Shirt Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Custom T-Shirt Designer</h1>
+        
+        <div class="design-area">
+            <div class="canvas-container">
+                <canvas id="tshirtCanvas" width="400" height="400"></canvas>
+            </div>
+            
+            <div class="controls">
+                <div class="control-group">
+                    <label for="textInput">Add Text:</label>
+                    <input type="text" id="textInput">
+                    <button onclick="addText()">Add</button>
+                </div>
+
+                <div class="control-group">
+                    <label for="colorPicker">T-Shirt Color:</label>
+                    <input type="color" id="colorPicker" value="#ffffff">
+                </div>
+
+                <div class="control-group">
+                    <label for="uploadImage">Upload Image:</label>
+                    <input type="file" id="uploadImage" accept="image/*">
+                </div>
+
+                <button onclick="saveDesign()" class="save-btn">Save Design</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
